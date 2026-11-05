@@ -5,5 +5,7 @@ tests/test_router
 tests/test_state
 tests/test_middleware
 tests/test_console
+tests/test_telegram
 examples/echo_bot
+examples/telegram_bot
 .vscode/

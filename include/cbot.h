@@ -93,6 +93,11 @@ struct CbotAdapter {
 /* Built-in adapters (each lives in its own optional module). */
 CbotAdapter *cbot_adapter_console(void);
 CbotAdapter *cbot_adapter_telegram(const char *token);
+CbotAdapter *cbot_adapter_telegram_webhook(const char *token);
+CbotStatus   cbot_telegram_feed_update(CbotAdapter *a, const char *json_payload);
+CbotStatus   cbot_telegram_set_webhook(const char *token, const char *webhook_url);
+CbotStatus   cbot_telegram_delete_webhook(const char *token);
+void         cbot_telegram_set_base_url(CbotAdapter *a, const char *base_url);
 CbotAdapter *cbot_adapter_irc(const char *host, int port,
                               const char *nick, const char *channel);
 
