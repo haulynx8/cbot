@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cbot
+Description: Modular C bot framework for Telegram, IRC, Discord, and Console
+Version: 0.1.0
+Libs: -L${libdir} -lcbot -pthread
+Cflags: -I${includedir}

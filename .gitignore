@@ -1,0 +1,9 @@
+*.o
+*.a
+tests/test_core
+tests/test_router
+tests/test_state
+tests/test_middleware
+tests/test_console
+examples/echo_bot
+.vscode/
